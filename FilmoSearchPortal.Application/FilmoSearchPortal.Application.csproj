@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0-preview.3.24172.9" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FilmoSearchPortal.Domain\FilmoSearchPortal.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Commands\Actor\" />
+    <Folder Include="CQRS\Commands\Director\" />
+    <Folder Include="CQRS\Commands\Film\" />
+    <Folder Include="CQRS\Commands\Genre\" />
+    <Folder Include="CQRS\Commands\Review\" />
+    <Folder Include="CQRS\Queries\Director\" />
+    <Folder Include="CQRS\Queries\Film\" />
+  </ItemGroup>
+
+</Project>
